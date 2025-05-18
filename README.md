@@ -24,6 +24,7 @@ File 'ПограничныеСлучаиБоли' is used for the pacticular cas
         return omega
 
 4. To reveal and show the graph structure and visualize uncomment it...
+
        #elarge = [(u, v) for (u, v, d) in G.edges(data=True) if d["weight"] > k]
        #esmall = [(u, v) for (u, v, d) in G.edges(data=True) if d["weight"] <= k]
      
@@ -42,7 +43,7 @@ File 'ПограничныеСлучаиБоли' is used for the pacticular cas
  
    ... and put into the modelling function starting at the row '#Graph representation here'
 
- 5. To work with the outputs you want to use 'dfPL10mln' pandas dataframe. To use the basic output don't touch the DF block
+ 6. To work with the outputs you want to use 'dfPL10mln' pandas dataframe. To use the basic output don't touch the DF block
 
          for i in range(len(OverallProfitForIterationList)):
            dfPL10mln.loc[len(dfPL10mln)] = [i, OverallProfitForIterationList[i], FlattenedInterQlistTotal[i], OverallProfitForIterationList[i]-FlattenedInterQlistTotal[i], MFbyIterReal[0][i], MFbyIterReal[1][i], MFbyIterReal[2][i], MFbyIterReal[3][i], MFbyIterReal[4][i]]*
