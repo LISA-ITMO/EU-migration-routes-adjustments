@@ -40,9 +40,12 @@ File 'ПограничныеСлучаиБоли' is used for the pacticular cas
      *for i in range(len(OverallProfitForIterationList)):
       dfPL10mln.loc[len(dfPL10mln)] = [i, OverallProfitForIterationList[i], FlattenedInterQlistTotal[i], OverallProfitForIterationList[i]-FlattenedInterQlistTotal[i], MFbyIterReal[0][i], MFbyIterReal[1][i], MFbyIterReal[2][i], MFbyIterReal[3][i], MFbyIterReal[4][i]]*
 
- If you need any other data, follow the logic of model outputs listed here *iterations, MigrantsFlowByPlayer, TP, CoalitionOfAgreement, CoalitionOfAgreementProfit, ProfitsOfAllAgents, OverallProfitForIterationList, MQ, TQ = FullCFModel(unit, listOfEdges, verticesDict, alpha, crimeRatio, remittancesRatio, reproductionRatio, socialEnthropyRatio)*
+ If you need any other data, follow the logic of model outputs listed here:
  
-   ~~~*iterations - the iteration where quote of votes for stopping has been reached; 
+ >(iterations, MigrantsFlowByPlayer, TP, CoalitionOfAgreement, CoalitionOfAgreementProfit, ProfitsOfAllAgents, OverallProfitForIterationList, MQ, TQ = FullCFModel(unit, listOfEdges, verticesDict, alpha, crimeRatio, remittancesRatio, reproductionRatio, socialEnthropyRatio))
+ 
+   ~~~
+    iterations - the iteration where quote of votes for stopping has been reached; 
     MigrantsFlowByPlayer - matrix with agents as columns and MF as rows; 
     TP - total profit as a sum of profit list of all agents; 
     CoalitionOfAgreement - list of agents voted to end the game at 'iterations'; 
